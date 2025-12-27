@@ -25,7 +25,7 @@ const validateBuyerName = (buyerName) => {
   return cleaned.length >= 2 && cleaned !== "";
 };
 
-console.log("Validate buyer 'AB':", validateBuyerName("AB"));
+console.log("Validate buyer 'RZA':", validateBuyerName("RZA"));
 console.log("Validate buyer ' ':", validateBuyerName(" "));
 
 // 3) checkUserAuthorization with switch
@@ -62,20 +62,20 @@ function createSalesRecord(produceName, tonnage, buyerName, amountPaid) {
 }
 
 // 5) Create object and manipulate
-const testSale = createSalesRecord("Beans", 1200, "James Bond", 6500000);
+const testSale = createSalesRecord("Beans", 1200, "George Mendez", 6500000);
 
-// Add new property branch (dot notation)
-testSale.branch = "Maganjo";
+// Add new property branch
+testSale.branch = "Arua";
 
 // Modify isCreditSale to true
 testSale.isCreditSale = true;
 
-// Add dueDate using bracket notation
+// Adding dueDate using bracket notation
 testSale["dueDate"] = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); // 7 days later
 
 // Log property names using Object.keys()
-const propNames = Object.keys(testSale);
-console.log("Sales record property names:", propNames);
+const propertyNames = Object.keys(testSale);
+console.log("Sales record property names:", propertyNames);
 
 // 6) for...in loop to log each property
 for (const prop in testSale) {
