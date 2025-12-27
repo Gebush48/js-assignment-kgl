@@ -1,4 +1,3 @@
-
 // Part A
 
 // I used const because the company name won't change throughout the program
@@ -40,8 +39,8 @@ function toTitleCase(name) {
   // split on spaces, filter out empties
   return name
     .split(" ")
-    .filter(part => part.length > 0)
-    .map(part => part[0].toUpperCase() + part.slice(1).toLowerCase())
+    .filter((part) => part.length > 0)
+    .map((part) => part[0].toUpperCase() + part.slice(1).toLowerCase())
     .join(" ");
 }
 
@@ -94,7 +93,7 @@ if (userRole === "Sales Agent") {
   }
 }
 
-// Part 
+// Part D
 
 // Initial array
 let kglProduce = ["Beans", "Grain Maize", "Cow peas", "G-nuts", "Soybeans"];
